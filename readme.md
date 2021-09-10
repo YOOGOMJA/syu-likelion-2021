@@ -1,3 +1,4 @@
+
 # 멋쟁이 사자처럼 SYU 2021 🦁
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FYOOGOMJA%2Fsyu-likelion-2021&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
@@ -52,5 +53,11 @@
 ### 참여자 
 
 - [유경수](mailto:dev.yoogomja@gmail.com)
-- [정현수] (jj020305@gmail.com)
-- 
+- [이지수](mailto:jisu6414@likelion.org)
+- [황한슬](mailto:rogitun@gmail.com)
+- [성예지](mailto:098dpwl@gmail.com)
+- [최정은](mailto:renee8369@naver.com)
+- [김지연](mailto:jy_0327@gmail.com)
+- [주미진](mailto:jdssobe9554@gmail.com)
+- [정현수](mailto:jj020305@gmail.com)
+
