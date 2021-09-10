@@ -62,3 +62,5 @@
 - [정현수](mailto:jj020305@gmail.com)
 - [류지윤](mailto:bamdal124@gmail.com)
 - [김진아](mailto:gyrin2323@naver.com)
+- [이보람](mailto:loves4329@naver.com)
+
