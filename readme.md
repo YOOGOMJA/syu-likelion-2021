@@ -52,3 +52,4 @@
 ### 참여자 
 
 - [유경수](mailto:dev.yoogomja@gmail.com)
+- [박세연](syp9908@likelion.org)
