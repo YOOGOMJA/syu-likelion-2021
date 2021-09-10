@@ -52,4 +52,10 @@
 ### 참여자 
 
 - [유경수](mailto:dev.yoogomja@gmail.com)
-- [주미진](jdssobe9554@gmail.com)
+- [이지수](mailto:jisu6414@likelion.org)
+- [황한슬](mailto:rogitun@gmail.com)
+- [성예지](mailto:098dpwl@gmail.com)
+- [최정은](mailto:renee8369@naver.com)
+- [김지연](mailto:jy_0327@gmail.com)
+- [주미진](mailto:jdssobe9554@gmail.com)
+
