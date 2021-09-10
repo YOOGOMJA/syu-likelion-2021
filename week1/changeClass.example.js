@@ -6,3 +6,5 @@ window.addEventListener("DOMContentLoaded", function () {
   // 3. 클래스 추가하기
   header1.classList.add(["italic"]);
 });
+
+
