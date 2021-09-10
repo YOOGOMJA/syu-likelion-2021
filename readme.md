@@ -60,4 +60,5 @@
 - [김지연](mailto:jy_0327@gmail.com)
 - [주미진](mailto:jdssobe9554@gmail.com)
 - [정현수](mailto:jj020305@gmail.com)
+- [류지윤](mailto:bamdal124@gmail.com)
 
