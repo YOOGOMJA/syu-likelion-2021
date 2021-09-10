@@ -1,29 +1,16 @@
 window.addEventListener("DOMContentLoaded", () => {
   // 버튼을 찾기
   var btn1 = window.document.querySelector("#btn-1");
-
   // 버튼에 이벤트 추가하기
-
-
   btn1.addEventListener("click", () => {
     // 클릭 이벤트 1
-
     // header 찾기
     var header = window.document.querySelector("#header-1");
     // 빨강 제거
     header.classList.remove("red");
     // 파랑 추가
     header.classList.add("blue");
-
-    header.addEventListener('click',()=>{
-      alert(header.classList)
-    })
-
   });
-
-  
-
-
 });
 
 function myClickEvent() {
@@ -36,4 +23,3 @@ function myClickEvent() {
   // 빨강 추가
   header.classList.add("red");
 }
-
