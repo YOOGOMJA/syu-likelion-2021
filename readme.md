@@ -52,3 +52,4 @@
 ### 참여자 
 
 - [유경수](mailto:dev.yoogomja@gmail.com)
+- [김진아](gyrin2323@naver.com)
