@@ -63,5 +63,4 @@
 - [류지윤](mailto:bamdal124@gmail.com)
 - [김진아](mailto:gyrin2323@naver.com)
 - [이보람](mailto:loves4329@naver.com)
-- [박세연](syp9908@likelion.org)
-
+- [박세연](mailto:syp9908@likelion.org)
