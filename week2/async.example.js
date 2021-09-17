@@ -1,48 +1,29 @@
-// https://developer.mozilla.org/ko/docs/Web/Guide/AJAX/Getting_Started
-
-function load() {
-  console.log("click!!");
-  var element = document.getElementById("items");
-  var url =
-    "https://jsonplaceholder.typicode.com/posts/" +
-    (element.children.length + 1);
-  var httpRequest = new XMLHttpRequest();
-  var isAsyncRequest = false;
-  httpRequest.onreadystatechange = changeEventHandler;
-  httpRequest.open("GET", url, isAsyncRequest);
-  console.log("sent!!!");
-  httpRequest.send(null);
-  console.log("send finished!!", httpRequest.readyState);
+function add(a, b) {
+  var result = a + b;
+  console.log("[add] 계산완료 ! " + result);
+  return result;
 }
 
-function changeEventHandler(request) {
-  var currentRequest = request.currentTarget;
-  console.log("state changed! : ", request.currentTarget.readyState);
+// SYNC CALL
+function syncFn() {
+  var num1 = 1;
+  var num2 = 3;
 
-  if (currentRequest.readyState === XMLHttpRequest.DONE) {
-    if (currentRequest.status === 200) {
-      /// 요청 성공
-      console.log(currentRequest.responseText);
-      render(currentRequest.responseText);
-    } else {
-      console.log("failed");
-    }
-  }
+  console.log("[sync] num1 : " + num1 + " num2 : " + num2);
+  var result = add(num1, num2);
+  console.log("[sync] 덧셈 결과 ! : " + result);
 }
 
-function render(response) {
-  var parsed = JSON.parse(response);
-  var element = document.getElementById("items");
+// ASYNC CALL
+function asyncFn() {
+  var num1 = 1;
+  var num2 = 3;
+  var result = 0;
 
-  var titleElement = document.createElement("h1");
-  titleElement.innerText = "[ " + parsed.id + " ] " + parsed.title;
+  console.log("[async] num1 : " + num1 + " num2 : " + num2);
+  window.setTimeout(function () {
+    result = add(num1, num2);
+  }, 1000);
 
-  var contentElement = document.createElement("p");
-  contentElement.innerText = parsed.body;
-
-  var wrapperElement = document.createElement("div");
-  wrapperElement.appendChild(titleElement);
-  wrapperElement.appendChild(contentElement);
-
-  element.appendChild(wrapperElement);
+  console.log("[async] 덧셈 결과 ! : " + result);
 }
