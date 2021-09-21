@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./promise.prac.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
   </head>
   <body>
-    <button type="button">다음 항목 가져오기</button>
-    <p>마지막 갱신 : <span id="lastUpdatedDate"></span></p>
+    <button type="button" onclick="fetchData()">다음 항목 가져오기</button>
+    <p>연초 박스오피스 : <span id="lastUpdatedDate"></span></p>
     <ul id="list"></ul>
   </body>
+  <script src="./promise.prac.js" type="text/javascript"></script>
 </html>
