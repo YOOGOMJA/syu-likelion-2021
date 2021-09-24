@@ -1,6 +1,6 @@
-const calc = (a, b) => a + b;
+import { sum } from "./sum";
 
-console.log(`calc : ${calc(1, 2)}`);
+console.log(`calc : ${sum(1, 2)}`);
 
 console.log(document.querySelector("p"));
 
