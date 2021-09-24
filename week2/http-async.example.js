@@ -2,13 +2,16 @@
 
 function load() {
   console.log("click!!");
+  // 1. API 요청을 위한 주소를 만듦
   var element = document.getElementById("items");
   var url =
     "https://jsonplaceholder.typicode.com/posts/" +
     (element.children.length + 1);
+
   var httpRequest = new XMLHttpRequest();
   var isAsyncRequest = false;
   httpRequest.onreadystatechange = changeEventHandler;
+
   httpRequest.open("GET", url, isAsyncRequest);
   console.log("sent!!!");
   httpRequest.send(null);
