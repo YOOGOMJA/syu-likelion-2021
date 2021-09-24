@@ -4,8 +4,17 @@ function func1() {
   console.log("Hello");
 }
 
-const func2 = () => {
+const func2 = function () {
   console.log("Hello");
 };
 
-const func3 = (name) => "my name : " + name;
+// NEW! : ARROW FUNCTION
+
+const func3 = (name) => {
+  console.log("Hello, " + name);
+};
+
+const sum = (a, b) => ({ result: a + b, a, b });
+
+const { result } = sum(1, 2);
+console.log("result : " + result);

@@ -1,3 +1,5 @@
-import { sum } from "./parent.module";
+import sum, { printName } from "./parent.module";
 
-console.log("sum !! " + sum(1, 2));
+console.log("Hello! : " + sum(1, 2));
+
+printName("YOO");

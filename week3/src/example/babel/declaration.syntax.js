@@ -1,7 +1,13 @@
 /// 1. 선언하기
 
-var my_name = "yoo";
+/// NEW!!
+let person1 = "YOO";
 
-const const_my_name = "YOO";
+console.log("person1 name : " + person1);
 
-let my_name2 = "YOO";
+person1 = "LEE";
+
+console.log("person1 name : " + person1);
+
+/// NEW!
+const PERSON_2 = "PARK";
