@@ -14,8 +14,6 @@ let todos = [
 ];
 let todoSeq = todos.length;
 
-const listElem = document.querySelector(".todo-list");
-
 const fn = {
   clear: () => {
     const parent = document.querySelector(".todo-list");
@@ -40,7 +38,7 @@ const fn = {
   },
   renderArray: async () => {
     fn.clear();
-    const response = await axios.get("./todo-item.template.html");
+    const response = await window.axios.get("./todo-item.template.html");
     todos.forEach((item, index) => {
       const template = fn.convertToHTML(response.data);
       const seqElement = template.querySelector(".todo-seq");
