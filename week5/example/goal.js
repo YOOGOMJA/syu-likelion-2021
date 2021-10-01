@@ -1,7 +1,7 @@
 let todos = [
   {
     seq: 1,
-    title: "세션 듣기",
+    title: "nodejs 설치하기",
   },
   {
     seq: 2,
@@ -10,6 +10,10 @@ let todos = [
   {
     seq: 3,
     title: "리액트 조사하기",
+  },
+  {
+    seq: 4,
+    title: "cra로 프로젝트 만들기",
   },
 ];
 let todoSeq = todos.length;
