@@ -9,7 +9,9 @@ const func2 = function () {
 };
 
 // NEW! : ARROW FUNCTION
-
+// 1. 형태
+// 2. 리턴이 특이할 수 있음
+// 3. scope에 대해서 알아야 할 수도 있음
 const func3 = (name) => {
   console.log("Hello, " + name);
 };
