@@ -11,25 +11,17 @@
   </head>
   <body>
     <div class="container">
+      <!-- 제목 부분 -->
       <h1>TODO LIST</h1>
+      <!-- 내용 입력하는 부분 -->
       <div class="todo-form">
         <input type="text" class="todo-input" />
         <button type="button" class="todo-submit button" onclick="create()">
           +
         </button>
       </div>
-      <div class="todo-list">
-        <div class="todo-item">
-          <p class="todo-seq"></p>
-          <p class="todo-title"></p>
-          <button class="todo-delete">삭제</button>
-        </div>
-        <div class="todo-item">
-          <p class="todo-seq"></p>
-          <p class="todo-title"></p>
-          <button class="todo-delete button">삭제하기</button>
-        </div>
-      </div>
+      <!-- 실제 리스트 부분 -->
+      <div class="todo-list"></div>
     </div>
   </body>
 </html>
