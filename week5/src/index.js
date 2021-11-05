@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import CountUpPage from "./page/CountUp.page";
 import { default as TodoPage } from "./page/TodoPage.page";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <TodoPage />
+    <CountUpPage />
   </React.StrictMode>,
   document.getElementById("root")
 );
