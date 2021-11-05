@@ -22,7 +22,21 @@ const TodoPage = () => {
       setTodoItems([...todoItems]);
     },
     /// 아이템을 추가함
-    create: () => {},
+    create: (todo) => {
+      if (todo && todo !== "") {
+        let _todoItemSeqNum = todoItemSeqNum + 1;
+        setTodoItems([
+          ...todoItems,
+          {
+            seq: _todoItemSeqNum,
+            title: todo,
+          },
+        ]);
+        setTodoItemSeqNum(_todoItemSeqNum);
+      } else {
+        window.alert("할 일을 입력해주세요");
+      }
+    },
   };
 
   return (
@@ -30,7 +44,7 @@ const TodoPage = () => {
       {/* 제목 */}
       <TodoTitle />
       {/* 사용자 입력 */}
-      <TodoInputForm />
+      <TodoInputForm onSubmit={ui.create} />
       {/* 할일 목록 */}
       <TodoList items={todoItems} onRemove={ui.remove} />
     </div>
