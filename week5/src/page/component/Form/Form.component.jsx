@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import "./Form.css";
 
-const TodoInputForm = ({ onSubmit }) => {
+const TodoInputForm = (props) => {
+  const { onSubmit } = props;
   const [todo, setTodo] = useState("");
   const insert = () => {
     onSubmit(todo);
