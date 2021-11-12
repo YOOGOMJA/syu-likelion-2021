@@ -2,9 +2,10 @@
 import React from "react";
 import "./Title.css";
 
-const TodoTitle = () => {
+const TodoTitle = (props) => {
+  const { title } = props;
   // 자바스크립트 코드
-  return <h1>Todo List</h1>;
+  return <h1>{title}</h1>;
 };
 
 export default TodoTitle;

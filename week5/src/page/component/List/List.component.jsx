@@ -4,12 +4,11 @@ import "./List.css";
 import { default as TodoListItem } from "./ListItem.component";
 
 const TodoList = (props) => {
+  const { items, onRemove } = props;
   return (
     <div className='todo-list'>
-      {props.items.map((item, index) => {
-        return (
-          <TodoListItem item={item} onRemove={props.onRemove} key={index} />
-        );
+      {items.map((item, index) => {
+        return <TodoListItem item={item} onRemove={onRemove} key={index} />;
       })}
     </div>
   );
