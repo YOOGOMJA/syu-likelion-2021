@@ -14,10 +14,25 @@ const TodoPage = () => {
   const ui = {
     /// 아이템을 삭제함
     remove: (item) => {
-      // 찾아라, 같은애를
-      // 복사해라 원본을
-      // 없애라 찾은애를, 복사본에서
-      // 덮어써라 todolist를
+      if (!window.confirm(`진짜 [${item.title}]을 삭제할까요?`)) {
+        return;
+      }
+      // 1.찾아라!
+      const found = todoItems.findIndex(
+        (todoItem) => todoItem.seq === item.seq
+      );
+      if (found >= 0) {
+        // 2. 배열을 복사
+        let cloned = [...todoItems];
+        // 3. 복사본에서 삭제
+        cloned.splice(found, 1);
+        // 4. 상태에 반영
+        setTodoItems(cloned);
+        alert("삭제했습니다!");
+      } else {
+        alert("잘못된 친굽니다");
+        throw new Error("잘못된 값임!");
+      }
     },
     /// 아이템을 추가함
     create: (todo) => {
