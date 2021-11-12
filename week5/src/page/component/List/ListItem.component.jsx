@@ -5,10 +5,10 @@ const TodoListItem = (props) => {
     props.onRemove(props.item);
   };
   return (
-    <div class='todo-item'>
-      <p class='todo-seq'>{props.item.seq}</p>
-      <p class='todo-title'>{props.item.title}</p>
-      <button class='todo-delete' onClick={remove}>
+    <div className='todo-item'>
+      <p className='todo-seq'>{props.item.seq}</p>
+      <p className='todo-title'>{props.item.title}</p>
+      <button className='todo-delete' onClick={remove}>
         삭제하기
       </button>
     </div>
