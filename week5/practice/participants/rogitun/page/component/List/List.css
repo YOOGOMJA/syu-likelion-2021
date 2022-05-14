@@ -1,0 +1,38 @@
+/* LIST */
+.todo-list {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.todo-list .todo-item {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 30px;
+
+  margin-bottom: 35px;
+  min-height: 50px;
+
+  /* glassmorphism css */
+  border-radius: 15px;
+  background: #37474f;
+  box-shadow: -8px -8px 28px #253036, 8px 8px 28px #495e68;
+}
+
+.todo-list .todo-item .todo-seq {
+  flex: 1;
+  color: #78909c;
+}
+.todo-list .todo-item .todo-title {
+  flex: 9;
+  color: #f5f5f5;
+}
+.todo-list .todo-item .todo-delete {
+  flex: 2;
+
+  cursor: pointer;
+  border: 0;
+
+  background-color: transparent;
+  border: 0;
+  color: #ef5350;
+}
